@@ -1,3 +1,5 @@
+$.noConflict();
+(function($){
 $(document).ready(
   function() {
     $('html').removeClass('nojs');
@@ -8,7 +10,7 @@ $(document).ready(
     } else {
       console.log('Nice work! jQuery no longer controls the $ variable');
     }
-
   }
 );
+})(jQuery);
 
